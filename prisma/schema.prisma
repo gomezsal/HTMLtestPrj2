@@ -8,11 +8,10 @@ datasource db {
 }
 
 model cats {
-  id            String    @id @default(auto()) @map("_id") @db.ObjectId
-  birthDate     DateTime? @db.Date
-  deathDate     DateTime? @db.Date
-  description   String?
-  lastName      String?
-  name          String?
-
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  birthDate      DateTime? @db.Date
+  deathDate      DateTime? @db.Date
+  description    String?
+  lastName       String?
+  name           String?
 }

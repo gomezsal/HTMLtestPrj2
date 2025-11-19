@@ -129,7 +129,8 @@ const getData = async () => {
             data.forEach(item => {
                 let div = document.createElement('div')
                 div.innerHTML = `<h3>${item.name}</h3>
-            <p>${item.microchip || '<i>No Microchip Found</i>'}</p>
+            <p>${item.birthDate || '<i>No Birthday Found</i>'}</p>
+            <p>${item.deathDate || '<i>No Birthday Found</i>'}</p>
             <p>${item.description || '<i>No Description Found</i>'}</p>
             `
                 contentArea.appendChild(div)
